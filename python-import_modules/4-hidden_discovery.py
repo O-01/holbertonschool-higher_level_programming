@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-import hidden_4
 if __name__ == "__main__":
-    print(dir(hidden_4))
-    for iteration in range(0, len(dir(hidden_4))):
-        if dir(hidden_4)[iteration][0] != "_":
-            print(dir(hidden_4)[iteration])
+    import hidden_4
+    for iter in range(0, len(dir(hidden_4))):
+        if dir(hidden_4)[iter][0] != "_" and dir(hidden_4)[iter][1] != "_":
+            print(dir(hidden_4)[iter])
