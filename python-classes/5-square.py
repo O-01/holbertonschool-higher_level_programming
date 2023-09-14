@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" added getter & setter for size """
+""" added functionality for printing visual representation of square """
 
 
 class Square:
@@ -11,9 +11,6 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
-
-    def area(self):
-        return self.__size ** 2
 
     @property
     def size(self):
@@ -27,3 +24,12 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+
+    def area(self):
+        return self.__size ** 2
+
+    def my_print(self):
+        for row in range(self.__size):
+            for col in range(self.__size):
+                print("#", end="")
+            print()
