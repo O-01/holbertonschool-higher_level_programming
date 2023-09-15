@@ -15,7 +15,7 @@ class Square:
         return self.__size
 
     @size.setter
-    def size(self, value=0):
+    def size(self, value):
         """ sets size attribute of Square to value """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -30,7 +30,7 @@ class Square:
         return self.__position
 
     @position.setter
-    def position(self, value=(0, 0)):
+    def position(self, value):
         """ sets size attribute of Square to value """
         if not isinstance(value, tuple) or len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
@@ -50,10 +50,10 @@ class Square:
         if self.__size == 0:
             print()
             pass
-        for co in range(self.__position[1]):
+        for co in range(self.position[1]):
             print()
         for row in range(self.__size):
-            for ro in range(self.__position[0]):
+            for ro in range(self.position[0]):
                 print(" ", end="")
             for col in range(self.__size):
                 print("#", end="")
