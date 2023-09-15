@@ -49,7 +49,7 @@ class Square:
         """ prints visual representation of Square using # character """
         if self.__size == 0:
             print()
-            pass
+            return
         for co in range(self.position[1]):
             print()
         for row in range(self.__size):
