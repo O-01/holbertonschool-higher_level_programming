@@ -1,0 +1,67 @@
+The ``text_indentation`` module
+==========================
+
+text_indentation(text)
+
+``text_indentation`` prints a given text with 2 line breaks after ./?/: delimiters
+reached - text must be a string without spaces at either the beginning or end of
+each printed line
+
+Using ``text_indentation``:
+----------------------
+
+Import the module using the following:
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Examples of responses to correct argument input:
+================================================
+
+text argument as string:
+
+    >>> text_indentation("Welcome. back? to: the. stage? of: history.")
+    Welcome.
+    <BLANKLINE>
+    back?
+    <BLANKLINE>
+    to:
+    <BLANKLINE>
+    the.
+    <BLANKLINE>
+    stage?
+    <BLANKLINE>
+    of:
+    <BLANKLINE>
+    history.
+
+text argument as string with blank line:
+
+    >>> text_indentation("")
+
+``text_indentation`` must raise an error upon receiving invalid arguments:
+---------------------------------------------------------------------
+
+Examples of responses to incorrect argument input:
+==================================================
+
+text argument is not string:
+
+    >>> text_indentation(69420)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+No argument:
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Excessive argument count:
+
+    >>> text_indentation("Hi", 3)
+    Traceback (most recent call last):
+    TypeError: text_indentation() takes 1 positional argument but 2 were given
