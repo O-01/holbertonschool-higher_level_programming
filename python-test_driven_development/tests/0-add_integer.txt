@@ -1,0 +1,96 @@
+The ``add_integer`` module
+==========================
+
+``add_integer`` returns the sum of two arguments of int or float type
+
+Using ``add_integer``:
+----------------------
+
+Import the module using the following:
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Examples of responses to correct argument input:
+================================================
+
+Both arguments as integers:
+
+    >>> add_integer(12, 16)
+    28
+
+Both arguments as floats:
+
+    >>> add_integer(1.2, 1.6)
+    2
+
+Both arguments as negative integers:
+
+    >>> add_integer(-12, -16)
+    -28
+
+Mixed integer/float arguments:
+
+    >>> add_integer(12, 1.6)
+    13
+
+    >>> add_integer(1.2, 16)
+    17
+
+Single argument:
+
+    >>> add_integer(12)
+    110
+
+``add_integer`` must raise an error upon receiving invalid arguments:
+---------------------------------------------------------------------
+
+Examples of responses to incorrect argument input:
+==================================================
+
+String argument:
+
+    >>> add_integer(69420, "Nice")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+NoneType argument:
+
+    >>> add_integer(None, 16)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+List argument:
+
+    >>> add_integer([12, 16], 24)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Bool argument:
+
+    >>> add_integer(12, True)
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+No argument:
+
+    >>> add_integer()
+    Traceback (most recent call last):
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Excessive argument count:
+
+    >>> add_integer(12, 16, 24)
+    Traceback (most recent call last):
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+Infinity float argument:
+
+    >>> add_integer(float('inf'), 16)
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+
+NaN float argument:
+
+    >>> add_integer(float('nan'), 16)
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
