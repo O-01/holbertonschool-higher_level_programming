@@ -34,9 +34,9 @@ class Square:
         """ sets size attribute of Square to value """
         if not isinstance(value, tuple) or len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if not isinstance(value[0], int) or not isinstance(value[1], int):
+        if not all(isinstance(item, int) for item in value):
             raise TypeError("position must be a tuple of 2 positive integers")
-        if value[0] < 0 or value[1] < 0:
+        if not all(item >= 0 for item in value):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
@@ -50,10 +50,10 @@ class Square:
         if self.__size == 0:
             print()
             return
-        for co in range(self.position[1]):
+        for co in range(self.__position[1]):
             print()
         for row in range(self.__size):
-            for ro in range(self.position[0]):
+            for ro in range(self.__position[0]):
                 print(" ", end="")
             for col in range(self.__size):
                 print("#", end="")
