@@ -62,7 +62,7 @@ class Square:
         if self.__size == 0:
             print()
         for co in range(self.__position[1]):
-                print()
+            print()
         for row in range(self.__size):
             for ro in range(self.__position[0]):
                 print(" ", end="")
