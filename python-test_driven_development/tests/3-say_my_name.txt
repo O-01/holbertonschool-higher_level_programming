@@ -1,0 +1,78 @@
+The ``say_my_name`` module
+==========================
+
+``say_my_name`` prints 'My name is <first name> <last name>' based upon arguments
+received - only first_name is strictly required, however both arguments
+must be of string data type
+
+Using ``say_my_name``:
+----------------------
+
+Import the module using the following:
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Examples of responses to correct argument input:
+================================================
+
+Both arguments as strings:
+
+    >>> say_my_name("James", "Franco")
+    My name is James Franco
+
+Single string argument without second argument:
+
+    >>> say_my_name("Chad")
+    My name is Chad 
+
+``say_my_name`` must raise an error upon receiving invalid arguments:
+---------------------------------------------------------------------
+
+Examples of responses to incorrect argument input:
+==================================================
+
+First argument not of string type:
+
+    >>> say_my_name(69420)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+Second argument not of string type:
+
+    >>> say_my_name("James", 69420)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+    >>> say_my_name("Tyrone", None)
+    Traceback (most recent call last):
+    TypeError: unsupported format string passed to NoneType.__format__
+
+No argument:
+
+    >>> say_my_name()
+    Traceback (most recent call last):
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+Excessive argument count:
+
+    >>> say_my_name("Edgar", "Allan", "Poe")
+    Traceback (most recent call last):
+    TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
+
+None argument passed in either position:
+
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> say_my_name(None, "Franco")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> say_my_name("James", None)
+    Traceback (most recent call last):
+    TypeError: unsupported format string passed to NoneType.__format__
