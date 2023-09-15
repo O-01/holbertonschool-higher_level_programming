@@ -1,0 +1,70 @@
+The ``print_square`` module
+==========================
+
+print_square(size)
+
+``print_square`` prints square with specified side length represented by '#'
+character - size input is the length of each side of the desired square to be
+printed - size must be of integer data type & with value greater than zero
+
+Using ``print_square``:
+----------------------
+
+Import the module using the following:
+
+>>> print_square = __import__('4-print_square').print_square
+
+Examples of responses to correct argument input:
+================================================
+
+Size as integer greater than zero:
+
+    >>> print_square(6)
+    ######
+    ######
+    ######
+    ######
+    ######
+    ######
+
+Size integer is zero:
+
+    >>> print_square(0)
+
+``print_square`` must raise an error upon receiving invalid arguments:
+---------------------------------------------------------------------
+
+Examples of responses to incorrect argument input:
+==================================================
+
+Size argument is not integer:
+
+    >>> print_square("Hi")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print_square(3.14)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print_square(None)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+Size argument as integer less than zero:
+
+    >>> print_square(-12)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+
+No argument:
+
+    >>> print_square()
+    Traceback (most recent call last):
+    TypeError: print_square() missing 1 required positional argument: 'size'
+
+Excessive argument count:
+
+    >>> print_square(6, 2)
+    Traceback (most recent call last):
+    TypeError: print_square() takes 1 positional argument but 2 were given
