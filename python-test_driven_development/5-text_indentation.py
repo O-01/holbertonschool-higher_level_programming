@@ -12,6 +12,7 @@ def text_indentation(text):
     for idx, char in enumerate(text):
         if tab == 1:
             if char == " ":
+                char = ""
                 continue
             else:
                 tab = 0
