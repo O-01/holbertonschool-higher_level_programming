@@ -8,10 +8,19 @@ def text_indentation(text):
     printed line """
     if type(text) is not str:
         raise TypeError("text must be a string")
+    tab = 0
     for idx, char in enumerate(text):
-        if idx > 0 and text[idx - 1] in ".?:":
+        if tab == 1:
             if char == " ":
+                continue
+            else:
+                tab = 0
+                continue
+        elif idx > 0 and text[idx - 1] in ".?:":
+            if char == " ":
+                tab = 1
                 char = ""
             print()
             print()
         print(char, end="")
+        tab = 0
