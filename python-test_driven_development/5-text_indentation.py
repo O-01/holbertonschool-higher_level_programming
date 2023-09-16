@@ -25,6 +25,6 @@ def text_indentation(text):
                 print("\n")
                 if char == " ":
                     skip = 1
-            else:
-                print(char, end="")
-                printed = 1
+                    continue
+            print(char, end="")
+            printed = 1
