@@ -22,9 +22,9 @@ def text_indentation(text):
                     pass
 
             if idx > 0 and char in ".?:":
+                print(char, end="\n\n")
                 if idx < len(text) -1 and text[idx + 1] == " ":
                     skip = 1
-                    print(char, end="\n\n")
             else:
-                    print(char, end="")
-                    printed = 1
+                print(char, end="")
+                printed = 1
