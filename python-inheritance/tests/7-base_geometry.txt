@@ -7,53 +7,64 @@ import the thing to get started:
 
 proceed:
 
->>> type(BaseGeometry)
-<class 'type'>
 >>> tesuto = BaseGeometry()
 >>> type(tesuto)
 <class '7-base_geometry.BaseGeometry'>
+
 >>> tesuto.area()
 Traceback (most recent call last):
 ...
 Exception: area() is not implemented
+
 >>> tesuto.integer_validator()
 Traceback (most recent call last):
 ...
-TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
 >>> tesuto.integer_validator(1)
 Traceback (most recent call last):
 ...
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
 >>> tesuto.integer_validator("Eric", 4)
+
 >>> tesuto.integer_validator("Eric", -4)
 Traceback (most recent call last):
 ...
 ValueError: Eric must be greater than 0
+
 >>> tesuto.integer_validator("Eric", None)
 Traceback (most recent call last):
 ...
 TypeError: Eric must be an integer
+
 >>> tesuto.integer_validator("Eric", float('inf'))
 Traceback (most recent call last):
 ...
 TypeError: Eric must be an integer
+
 >>> tesuto.integer_validator("Eric", float('nan'))
 Traceback (most recent call last):
 ...
 TypeError: Eric must be an integer
+
 >>> tesuto.integer_validator("Eric", "Dude")
 Traceback (most recent call last):
 ...
 TypeError: Eric must be an integer
+
 >>> tesuto.integer_validator(1, "Dude")
 Traceback (most recent call last):
 ...
 TypeError: 1 must be an integer
+
 >>> tesuto.integer_validator([1, 2], 2)
+
 >>> tesuto.integer_validator([1, 2], -2)
 Traceback (most recent call last):
 ...
 ValueError: [1, 2] must be greater than 0
+
 >>> tesuto.integer_validator([1, 2], [4, 8])
 Traceback (most recent call last):
 ...
