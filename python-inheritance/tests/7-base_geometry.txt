@@ -1,0 +1,6 @@
+~ ``my_list`` MyList ~
+======================
+
+import the thing to get started:
+
+>>> MyList = __import__('7-base_ge').BaseGeometry
