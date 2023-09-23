@@ -16,19 +16,19 @@ Traceback (most recent call last):
 ...
 Exception: area() is not implemented
 
->>> tesuto.integer_validator()
-Traceback (most recent call last):
-...
-TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
-
->>> tesuto.integer_validator(1)
-Traceback (most recent call last):
-...
-TypeError: integer_validator() missing 1 required positional argument: 'value'
-
 >>> tesuto.integer_validator("Eric", 4)
 
+>>> tesuto.integer_validator("Eric", "Dude")
+Traceback (most recent call last):
+...
+TypeError: Eric must be an integer
+
 >>> tesuto.integer_validator("Eric", -4)
+Traceback (most recent call last):
+...
+ValueError: Eric must be greater than 0
+
+>>> tesuto.integer_validator("Eric", 0)
 Traceback (most recent call last):
 ...
 ValueError: Eric must be greater than 0
@@ -38,20 +38,35 @@ Traceback (most recent call last):
 ...
 TypeError: Eric must be an integer
 
->>> tesuto.integer_validator("Eric", float('inf'))
+>>> tesuto.integer_validator("Eric", (2, 4))
 Traceback (most recent call last):
 ...
 TypeError: Eric must be an integer
 
->>> tesuto.integer_validator("Eric", float('nan'))
+>>> tesuto.integer_validator("Eric", [2, 4])
 Traceback (most recent call last):
 ...
 TypeError: Eric must be an integer
 
->>> tesuto.integer_validator("Eric", "Dude")
+>>> tesuto.integer_validator("Eric", {2, 4})
 Traceback (most recent call last):
 ...
 TypeError: Eric must be an integer
+
+>>> tesuto.integer_validator("Eric", False)
+Traceback (most recent call last):
+...
+TypeError: Eric must be an integer
+
+>>> tesuto.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+>>> tesuto.integer_validator("Dude")
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
 
 >>> tesuto.integer_validator(1, "Dude")
 Traceback (most recent call last):
