@@ -1,8 +1,105 @@
 ~ ``base_geometry`` BaseGeometry ~
-======================
+==================================
 
 import the thing to get started:
 
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
->>>
+verify type of the imported class:
+
+>>> type(BaseGeometry)
+<class 'type'>
+
+instantiate test object:
+
+>>> tesuto = BaseGeometry()
+
+verify class of test object:
+
+>>> type(tesuto)
+<class '7-base_geometry.BaseGeometry'>
+
+verify area method reacts as designed (not implemented):
+
+>>> tesuto.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
+call object method integer_validator without argument:
+
+>>> tesuto.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+call object method integer_validator with one integer argument:
+
+>>> tesuto.integer_validator(1)
+Traceback (most recent call last):
+...
+TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+
+call object method integer_validator with name & value correctly entered:
+
+>>> tesuto.integer_validator("Eric", 4)
+
+call object method integer_validator with correct name format, value less than 0:
+
+>>> tesuto.integer_validator("Eric", -4)
+Traceback (most recent call last):
+...
+ValueError: Eric must be greater than 0
+
+call object method integer_validator with correct name format, value NoneType:
+
+>>> tesuto.integer_validator("Eric", None)
+Traceback (most recent call last):
+...
+TypeError: Eric must be an integer
+
+call object method integer_validator with correct name format, value infinite float:
+
+>>> tesuto.integer_validator("Eric", float('inf'))
+Traceback (most recent call last):
+...
+TypeError: Eric must be an integer
+
+call object method integer_validator with correct name format, value NaN float:
+
+>>> tesuto.integer_validator("Eric", float('nan'))
+Traceback (most recent call last):
+...
+TypeError: Eric must be an integer
+
+call object method integer_validator with correct name format, value as string:
+
+>>> tesuto.integer_validator("Eric", "Dude")
+Traceback (most recent call last):
+...
+TypeError: Eric must be an integer
+
+call object method integer_validator with name as integer, value as string:
+
+>>> tesuto.integer_validator(1, "Dude")
+Traceback (most recent call last):
+...
+TypeError: 1 must be an integer
+
+call object method integer_validator with name as list, correct value:
+
+>>> tesuto.integer_validator([1, 2], 2)
+
+call object method integer_validator with name as list, value less than 0:
+
+>>> tesuto.integer_validator([1, 2], -2)
+Traceback (most recent call last):
+...
+ValueError: [1, 2] must be greater than 0
+
+call object method integer_validator with name as list, value as list:
+
+>>> tesuto.integer_validator([1, 2], [4, 8])
+Traceback (most recent call last):
+...
+TypeError: [1, 2] must be an integer
