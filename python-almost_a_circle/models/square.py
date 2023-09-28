@@ -24,8 +24,7 @@ class Square(Rectangle):
                 if index == 0:
                     self.id = item
                 if index == 1:
-                    self.width = item
-                    self.height = item
+                    self.size = item
                 if index == 2:
                     self.x = item
                 if index == 3:
@@ -35,8 +34,7 @@ class Square(Rectangle):
                 if key == "id":
                     self.id = value
                 if key == "size":
-                    self.width = value
-                    self.height = value
+                    self.size = value
                 if key == "x":
                     self.x = value
                 if key == "y":

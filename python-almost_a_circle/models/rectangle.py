@@ -100,6 +100,12 @@ class Rectangle(Base):
                 if key == "y":
                     self.y = value
 
+
+    def to_dictionary(self):
+        """ returns dictionary of Rectangle """
+        return {"id": self.id, "width": self.width,
+            "height": self.height, "x": self.x, "y": self.y}
+
     def __str__(self):
         """ overrides parent class __str__ method """
         return (
