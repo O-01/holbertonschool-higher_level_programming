@@ -66,14 +66,25 @@ class Rectangle(Base):
 
     def display(self):
         """ method prints representation of rectangle using '#' """
-        for row in range(self.__height):
-            if row == 0 and self.__y:
-                [print() for coord in range(self.__y)]
-            for col in range(self.__width):
-                if col == 0 and self.__x:
-                    [print(" ", end="") for coord in range(self.__x)]
+        [print() for coord in range(self.y)]
+        for row in range(self.height):
+            [print(" ", end="") for coord in range(self.x)]
+            for col in range(self.width):
                 print("#", end="")
             print()
+
+    def update(self, *args):
+        for iteration, item in enumerate(args):
+            if iteration == 0:
+                self.id = item
+            if iteration == 1:
+                self.width = item
+            if iteration == 2:
+                self.height = item
+            if iteration == 3:
+                self.x = item
+            if iteration == 4:
+                self.y = item
 
     def __str__(self):
         """ overrides parent class __str__ method """
