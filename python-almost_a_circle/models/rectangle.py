@@ -70,3 +70,10 @@ class Rectangle(Base):
             for col in range(self.__width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+        """ overrides parent class __str__ method """
+        return (
+            f"[Rectangle] ({self.id}) "
+            f"{self.__x}/{self.__y} - {self.__width}/{self.__height}"
+        )
