@@ -67,7 +67,11 @@ class Rectangle(Base):
     def display(self):
         """ method prints representation of rectangle using '#' """
         for row in range(self.__height):
+            if row == 0 and self.__y:
+                [print() for coord in range (self.__y)]
             for col in range(self.__width):
+                if col == 0 and self.__x:
+                    [print(" ", end="") for coord in range(self.__x)]
                 print("#", end="")
             print()
 
