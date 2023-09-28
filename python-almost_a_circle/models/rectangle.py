@@ -74,6 +74,7 @@ class Rectangle(Base):
             print()
 
     def update(self, *args):
+        """ updates attributes of Rectangle object """
         for iteration, item in enumerate(args):
             if iteration == 0:
                 self.id = item
