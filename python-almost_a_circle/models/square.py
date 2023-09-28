@@ -17,5 +17,30 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
+    def update(self, *args, **kwargs):
+        """ updates attributes of Square object """
+        if args and len(args) > 0:
+            for index, item in enumerate(args):
+                if index == 0:
+                    self.id = item
+                if index == 1:
+                    self.width = item
+                    self.height = item
+                if index == 2:
+                    self.x = item
+                if index == 3:
+                    self.y = item
+        elif kwargs and len(kwargs) > 0:
+            for key, value in kwargs.items():
+                if key == "id":
+                    self.id = value
+                if key == "size":
+                    self.width = value
+                    self.height = value
+                if key == "x":
+                    self.x = value
+                if key == "y":
+                    self.y = value
+
     def __str__(self):
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
