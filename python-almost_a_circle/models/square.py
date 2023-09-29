@@ -10,10 +10,12 @@ class Square(Rectangle):
 
     @property
     def size(self):
+        """ getter for size attribute """
         return self.width
 
     @size.setter
     def size(self, value):
+        """ size attribute setter """
         self.width = value
         self.height = value
 
@@ -42,7 +44,13 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """ returns dictionary of Rectangle """
-        return {"id": self.id, "size": self.size, "x": self.x, "y": self.y}
+        return {
+            "id": self.id,
+            "size": self.size,
+            "x": self.x,
+            "y": self.y
+        }
 
     def __str__(self):
+        """ string representation of Rectangle object """
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"

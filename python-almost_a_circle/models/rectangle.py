@@ -14,10 +14,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """ width attribute getter """
         return self.__width
 
     @width.setter
     def width(self, value):
+        """ width attribute setter """
         if type(value) is not int:
             raise TypeError("width must be an integer")
         elif value <= 0:
@@ -26,10 +28,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """ height attribute getter """
         return self.__height
 
     @height.setter
     def height(self, value):
+        """ height attribute setter """
         if type(value) is not int:
             raise TypeError("height must be an integer")
         elif value <= 0:
@@ -38,10 +42,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """ x attribute getter """
         return self.__x
 
     @x.setter
     def x(self, value):
+        """ x attribute setter """
         if type(value) is not int:
             raise TypeError("x must be an integer")
         elif value < 0:
@@ -50,10 +56,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """ y attribute getter """
         return self.__y
 
     @y.setter
     def y(self, value):
+        """ y attribute setter """
         if type(value) is not int:
             raise TypeError("y must be an integer")
         elif value < 0:
@@ -102,8 +110,13 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """ returns dictionary of Rectangle """
-        return {"id": self.id, "width": self.width,
-                "height": self.height, "x": self.x, "y": self.y}
+        return {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+        }
 
     def __str__(self):
         """ overrides parent class __str__ method """
