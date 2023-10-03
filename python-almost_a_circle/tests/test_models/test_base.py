@@ -2,6 +2,7 @@
 """ base.py unittest definitions """
 import unittest
 import json
+import os
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
@@ -119,10 +120,152 @@ class TestBase_from_json_string(unittest.TestCase):
 
 class TestBase_save_to_file(unittest.TestCase):
     """ tests for save_to_file Base classmethod """
-    def test_save_to_file(self):
+    @classmethod
+    def tearDown(self):
+        try:
+            os.remove("Rectangle.json")
+        except IOError:
+            pass
+        try:
+            os.remove("Square.json")
+        except IOError:
+            pass
+        try:
+            os.remove("Base.json")
+        except IOError:
+            pass
+
+    def setUp(self):
+        self.sq_inst = Square(2, 4, 8, 12)
+        self.rect_inst = Rectangle(2, 4, 8, 16, 12)
+
+    def test_save_to_file_invalid_arguments(self):
         with self.assertRaises(TypeError):
             Rectangle.save_to_file()
             Square.save_to_file([], 2)
+
+    def test_save_to_file_rectangle(self):
+        Rectangle.save_to_file([self.rect_inst])
+        with open("Rectangle.json", "r") as file:
+            self.assertTrue(len(file.read()) == 54)
+
+    def test_save_to_file_rectangles(self):
+        Rectangle.save_to_file([self.rect_inst, Rectangle(3, 6, 9, 12, 15)])
+        with open("Rectangle.json", "r") as file:
+            self.assertTrue(len(file.read()) == 108)
+
+    def test_save_to_file_square(self):
+        Square.save_to_file([self.sq_inst])
+        with open("Square.json", "r") as file:
+            self.assertTrue(len(file.read()) == 39)
+
+    def test_save_to_file_squares(self):
+        Square.save_to_file([self.sq_inst, Square(3, 6, 9, 12)])
+        with open("Square.json", "r") as file:
+            self.assertTrue(len(file.read()) == 78)
+
+    def test_save_to_file_cls_filename(self):
+        Base.save_to_file([self.sq_inst])
+        with open("Base.json", "r") as file:
+            self.assertTrue(len(file.read()) == 39)
+
+    def test_save_to_file_overwrite(self):
+        Square.save_to_file([self.sq_inst])
+        Square.save_to_file([Square(3, 6, 9, 12)])
+        with open("Square.json", "r") as file:
+            self.assertTrue(len(file.read()) == 39)
+
+    def test_save_to_file_none(self):
+        Square.save_to_file(None)
+        with open("Square.json", "r") as file:
+            self.assertEqual("[]", file.read())
+
+    def test_save_to_file_empty_list(self):
+        Square.save_to_file([])
+        with open("Square.json", "r") as file:
+            self.assertEqual("[]", file.read())
+
+
+class TestBase_create(unittest.TestCase):
+    """ tests for Base create method """
+    def setUp(self):
+        self.sq_inst = Square(2, 4, 8, 12)
+        self.rect_inst = Rectangle(2, 4, 8, 16, 12)
+
+    def test_create_rectangle(self):
+        self.assertEqual("[Rectangle] (12) 8/16 - 2/4", str(self.rect_inst))
+        rect_copy = Rectangle.create(**self.rect_inst.to_dictionary())
+        self.assertEqual("[Rectangle] (12) 8/16 - 2/4", str(rect_copy))
+
+    def test_create_rectangle_id(self):
+        rect_copy = Rectangle.create(**self.rect_inst.to_dictionary())
+        self.assertIsNot(self.rect_inst, rect_copy)
+        self.assertNotEqual(hex(id(self.rect_inst)), hex(id(rect_copy)))
+
+    def test_create_square(self):
+        self.assertEqual("[Square] (12) 4/8 - 2", str(self.sq_inst))
+        sq_copy = Square.create(**self.sq_inst.to_dictionary())
+        self.assertEqual("[Square] (12) 4/8 - 2", str(sq_copy))
+
+    def test_create_square_id(self):
+        sq_copy = Square.create(**self.sq_inst.to_dictionary())
+        self.assertIsNot(self.sq_inst, sq_copy)
+        self.assertNotEqual(hex(id(self.sq_inst)), hex(id(sq_copy)))
+
+
+class TestBase_load_from_file(unittest.TestCase):
+    """ tests for Base load_from_file method """
+    @classmethod
+    def tearDown(self):
+        try:
+            os.remove("Rectangle.json")
+        except IOError:
+            pass
+        try:
+            os.remove("Square.json")
+        except IOError:
+            pass
+
+    def setUp(self):
+        self.sq_inst = Square(2, 4, 8, 12)
+        self.sq_inst1 = Square(3, 6, 9, 16)
+        self.rect_inst = Rectangle(2, 4, 8, 16, 12)
+        self.rect_inst1 = Rectangle(3, 6, 9, 12, 15)
+
+    def test_load_from_file_invalid_arguments(self):
+        with self.assertRaises(TypeError):
+            Base.load_from_file([], 2)
+
+    def test_load_from_file_file_not_found(self):
+        self.assertEqual([], Square.load_from_file())
+
+    def test_load_from_file_rectangles(self):
+        Rectangle.save_to_file([self.rect_inst, self.rect_inst1])
+        self.assertEqual(
+            str(self.rect_inst),
+            str(Rectangle.load_from_file()[0])
+        )
+        self.assertEqual(
+            str(self.rect_inst1),
+            str(Rectangle.load_from_file()[1])
+        )
+        self.assertTrue(
+            all(type(obj) == Rectangle for obj in Rectangle.load_from_file())
+        )
+
+    def test_load_from_file_squares(self):
+        Square.save_to_file([self.sq_inst, self.sq_inst1])
+        self.assertEqual(
+            str(self.sq_inst),
+            str(Square.load_from_file()[0])
+        )
+        self.assertEqual(
+            str(self.sq_inst1),
+            str(Square.load_from_file()[1])
+        )
+        self.assertTrue(
+            all(type(obj) == Square for obj in Square.load_from_file())
+        )
 
 
 if __name__ == "__main__":

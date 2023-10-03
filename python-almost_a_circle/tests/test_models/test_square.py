@@ -101,6 +101,10 @@ class TestSquare_class(unittest.TestCase):
     def test_str(self):
         self.assertEqual(str(self.instance), "[Square] (12) 2/4 - 8")
 
+    def test_str_with_argument(self):
+        with self.assertRaises(TypeError):
+            self.instance.__str__(12)
+
 
 class TestSquare_setters_invalid_attribute_types(unittest.TestCase):
     """ tests for Square invalid instantiation attributes """
@@ -446,13 +450,25 @@ class TestSquare_update(unittest.TestCase):
         self.instance.update(**{'id': 24, 'size': 4})
         self.assertEqual(str(self.instance), "[Square] (24) 4/8 - 4")
 
-    def test_update_kwargs_height(self):
+    def test_update_kwargs_x(self):
         self.instance.update(**{'id': 24, 'size': 4, 'x': 8})
         self.assertEqual(str(self.instance), "[Square] (24) 8/8 - 4")
 
-    def test_update_kwargs_x(self):
+    def test_update_kwargs_y(self):
         self.instance.update(**{'id': 24, 'size': 4, 'x': 8, 'y': 16})
         self.assertEqual(str(self.instance), "[Square] (24) 8/16 - 4")
+
+    def test_update_kwargs_mixed_arguments(self):
+        self.instance.update(112, 144, y=66, x=96)
+        self.assertEqual(str(self.instance), "[Square] (112) 4/8 - 144")
+
+    def test_update_kwargs_no_matches_found(self):
+        self.instance.update(dude=100, surf=200)
+        self.assertEqual(str(self.instance), "[Square] (12) 4/8 - 2")
+
+    def test_update_kwargs_mixmatch(self):
+        self.instance.update(dude=100, id=144, surf=200, x=60, y=70)
+        self.assertEqual(str(self.instance), "[Square] (144) 60/70 - 2")
 
 
 class TestSquare_updates_invalid_attribute_types(unittest.TestCase):
@@ -993,7 +1009,19 @@ class TestSquare_to_dictionary(unittest.TestCase):
     """ tests for Square to_dictionary method """
     def setUp(self):
         self.instance = Square(2, 4, 8, 12)
+        self.inst_dict = {'id': 12, 'size': 2, 'x': 4, 'y': 8}
 
+    def test_to_dictionary(self):
+        self.assertDictEqual(self.instance.to_dictionary(), self.inst_dict)
+
+    def test_to_dictionary_update_kwargs(self):
+        sq_inst = Square(20, 40, 80, 120)
+        sq_inst.update(**self.instance.to_dictionary())
+        self.assertNotEqual(hex(id(self.instance)), hex(id(sq_inst)))
+
+    def test_to_dictionary_with_argument(self):
+        with self.assertRaises(TypeError):
+            self.instance.to_dictionary(12)
 
 if __name__ == "__main__":
     unittest.main()

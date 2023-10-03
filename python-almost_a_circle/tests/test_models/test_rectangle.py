@@ -125,6 +125,10 @@ class TestRectangle_class(unittest.TestCase):
     def test_str(self):
         self.assertEqual(str(self.instance), "[Rectangle] (12) 2/4 - 8/16")
 
+    def test_str_with_argument(self):
+        with self.assertRaises(TypeError):
+            self.instance.__str__(12)
+
 
 class TestRectangle_setters_invalid_attribute_types(unittest.TestCase):
     """ tests for Rectangle invalid instantiation attributes """
@@ -571,6 +575,18 @@ class TestRectangle_update(unittest.TestCase):
             'y': 32
         })
         self.assertEqual(str(self.instance), "[Rectangle] (24) 16/32 - 4/8")
+
+    def test_update_kwargs_mixed_arguments(self):
+        self.instance.update(112, 144, y=66, x=96)
+        self.assertEqual(str(self.instance), "[Rectangle] (112) 8/16 - 144/4")
+
+    def test_update_kwargs_no_matches_found(self):
+        self.instance.update(dude=100, surf=200)
+        self.assertEqual(str(self.instance), "[Rectangle] (12) 8/16 - 2/4")
+
+    def test_update_kwargs_mixmatch(self):
+        self.instance.update(dude=100, id=144, surf=200, x=60, y=70)
+        self.assertEqual(str(self.instance), "[Rectangle] (144) 60/70 - 2/4")
 
 
 class TestRectangle_updates_invalid_attribute_types(unittest.TestCase):
@@ -1333,7 +1349,21 @@ class TestRectangle_updates_invalid_attribute_types(unittest.TestCase):
 
 class TestRectangle_to_dictionary(unittest.TestCase):
     """ tests for Rectangle to_dictionary method """
-    pass
+    def setUp(self):
+        self.instance = Rectangle(2, 4, 8, 16, 12)
+        self.inst_dict = {'id': 12, 'width': 2, 'height': 4, 'x': 8, 'y': 16}
+
+    def test_to_dictionary(self):
+        self.assertDictEqual(self.instance.to_dictionary(), self.inst_dict)
+
+    def test_to_dictionary_update_kwargs(self):
+        rect_inst = Rectangle(20, 40, 80, 160, 120)
+        rect_inst.update(**self.instance.to_dictionary())
+        self.assertNotEqual(hex(id(self.instance)), hex(id(rect_inst)))
+
+    def test_to_dictionary_with_argument(self):
+        with self.assertRaises(TypeError):
+            self.instance.to_dictionary(12)
 
 
 if __name__ == "__main__":
