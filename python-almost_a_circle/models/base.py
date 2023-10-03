@@ -8,6 +8,7 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """ instantiate object of Base class """
         if id is not None:
             self.id = id
         else:
@@ -40,6 +41,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
+        """ creates instance with attributes set """
         if cls.__name__ == "Rectangle":
             dummy = cls(7, 7)
         elif cls.__name__ == "Square":
@@ -49,6 +51,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
+        """ returns list of instances """
         try:
             instance_list = []
             with open(cls.__name__ + ".json") as input_file:
