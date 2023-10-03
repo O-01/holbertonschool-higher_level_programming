@@ -126,6 +126,332 @@ class TestRectangle_class(unittest.TestCase):
         self.assertEqual(str(self.instance), "[Rectangle] (12) 2/4 - 8/16")
 
 
+class TestRectangle_setters_invalid_attribute_types(unittest.TestCase):
+    """ tests for Rectangle invalid instantiation attributes """
+    def setUp(self):
+        self.instance = Rectangle(2, 4, 8, 16, 12)
+
+    def test_setter_invalid_width_float(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = 3.14
+            Rectangle(3.14, 4)
+
+    def test_setter_invalid_width_complex(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = complex(6)
+            Rectangle(complex(6), 4)
+
+    def test_setter_invalid_width_range(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = range(6)
+            Rectangle(range(6), 4)
+
+    def test_setter_invalid_width_inf(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = float('inf')
+            Rectangle(float('inf'), 4)
+
+    def test_setter_invalid_width_nan(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = float('nan')
+            Rectangle(float('nan'), 4)
+
+    def test_setter_invalid_width_string(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = "dude"
+            Rectangle("dude", 4)
+
+    def test_setter_invalid_width_bool(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = True
+            Rectangle(True, 4)
+
+    def test_setter_invalid_width_none(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = None
+            Rectangle(None, 4)
+
+    def test_setter_invalid_width_tuple(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = (2, 4)
+            Rectangle((2, 4), 4)
+
+    def test_setter_invalid_width_list(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = [6, 6]
+            Rectangle([6, 6], 4)
+
+    def test_setter_invalid_width_dict(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = {'width': 6}
+            Rectangle({'width': 6}, 4)
+
+    def test_setter_invalid_width_set(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = {3, 6, 9}
+            Rectangle({3, 6, 9}, 4)
+
+    def test_setter_invalid_width_frozenset(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = frozenset({3, 6, 9})
+            Rectangle(frozenset({3, 6, 9}), 4)
+
+    def test_setter_invalid_width_byte(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = b'dude'
+            Rectangle(b'dude', 4)
+
+    def test_setter_invalid_width_bytearray(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = bytearray(b'dude')
+            Rectangle(bytearray(b'dude'), 4)
+
+    def test_setter_invalid_width_memoryview(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.width = memoryview(b'dude')
+            Rectangle(memoryview(b'dude'), 4)
+
+    def test_setter_invalid_height_float(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = 3.14
+            Rectangle(2, 3.14)
+
+    def test_setter_invalid_height_complex(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = complex(6)
+            Rectangle(2, complex(6))
+
+    def test_setter_invalid_height_range(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = range(6)
+            Rectangle(2, range(6))
+
+    def test_setter_invalid_height_inf(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = float('inf')
+            Rectangle(2, float('inf'))
+
+    def test_setter_invalid_height_nan(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = float('nan')
+            Rectangle(2, float('nan'))
+
+    def test_setter_invalid_height_string(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = "dude"
+            Rectangle(2, "dude")
+
+    def test_setter_invalid_height_bool(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = True
+            Rectangle(2, True)
+
+    def test_setter_invalid_height_none(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = None
+            Rectangle(2, None)
+
+    def test_setter_invalid_height_tuple(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = (2, 4)
+            Rectangle(2, (2, 4))
+
+    def test_setter_invalid_height_list(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = [6, 6]
+            Rectangle(2, [6, 6])
+
+    def test_setter_invalid_height_dict(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = {'height': 6}
+            Rectangle(2, {'height': 6})
+
+    def test_setter_invalid_height_set(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = {3, 6, 9}
+            Rectangle(2, {3, 6, 9})
+
+    def test_setter_invalid_height_frozenset(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = frozenset({3, 6, 9})
+            Rectangle(2, frozenset({3, 6, 9}))
+
+    def test_setter_invalid_height_byte(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = b'dude'
+            Rectangle(2, b'dude')
+
+    def test_setter_invalid_height_bytearray(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = bytearray(b'dude')
+            Rectangle(2, bytearray(b'dude'))
+
+    def test_setter_invalid_height_memoryview(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.height = memoryview(b'dude')
+            Rectangle(2, memoryview(b'dude'))
+
+    def test_setter_invalid_x_float(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = 3.14
+            Rectangle(2, 4, 3.14)
+
+    def test_setter_invalid_x_complex(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = complex(6)
+            Rectangle(2, 4, complex(6))
+
+    def test_setter_invalid_x_range(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = range(6)
+            Rectangle(2, 4, range(6))
+
+    def test_setter_invalid_x_inf(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = float('inf')
+            Rectangle(2, 4, float('inf'))
+
+    def test_setter_invalid_x_nan(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = float('nan')
+            Rectangle(2, 4, float('nan'))
+
+    def test_setter_invalid_x_string(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = "dude"
+            Rectangle(2, 4, "dude")
+
+    def test_setter_invalid_x_bool(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = True
+            Rectangle(2, 4, True)
+
+    def test_setter_invalid_x_none(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = None
+            Rectangle(2, 4, None)
+
+    def test_setter_invalid_x_tuple(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = (2, 4)
+            Rectangle(2, 4, (2, 4))
+
+    def test_setter_invalid_x_list(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = [6, 6]
+            Rectangle(2, 4, [6, 6])
+
+    def test_setter_invalid_x_dict(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = {'x': 6}
+            Rectangle(2, 4, {'x': 6})
+
+    def test_setter_invalid_x_set(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = {3, 6, 9}
+            Rectangle(2, 4, {3, 6, 9})
+
+    def test_setter_invalid_x_frozenset(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = frozenset({3, 6, 9})
+            Rectangle(2, 4, frozenset({3, 6, 9}))
+
+    def test_setter_invalid_x_byte(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = b'dude'
+            Rectangle(2, 4, b'dude')
+
+    def test_setter_invalid_x_bytearray(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = bytearray(b'dude')
+            Rectangle(2, 4, bytearray(b'dude'))
+
+    def test_setter_invalid_x_memoryview(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.x = memoryview(b'dude')
+            Rectangle(2, 4, memoryview(b'dude'))
+
+    def test_setter_invalid_y_float(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = 3.14
+            Rectangle(2, 4, 8, 3.14)
+
+    def test_setter_invalid_y_complex(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = complex(6)
+            Rectangle(2, 4, 8, complex(6))
+
+    def test_setter_invalid_y_range(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = range(6)
+            Rectangle(2, 4, 8, range(6))
+
+    def test_setter_invalid_y_inf(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = float('inf')
+            Rectangle(2, 4, 8, float('inf'))
+
+    def test_setter_invalid_y_nan(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = float('nan')
+            Rectangle(2, 4, 8, float('nan'))
+
+    def test_setter_invalid_y_string(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = "dude"
+            Rectangle(2, 4, 8, "dude")
+
+    def test_setter_invalid_y_bool(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = True
+            Rectangle(2, 4, 8, True)
+
+    def test_setter_invalid_y_none(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = None
+            Rectangle(2, 4, 8, None)
+
+    def test_setter_invalid_y_tuple(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = (2, 4)
+            Rectangle(2, 4, 8, (2, 4))
+
+    def test_setter_invalid_y_list(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = [6, 6]
+            Rectangle(2, 4, 8, [6, 6])
+
+    def test_setter_invalid_y_dict(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = {'x': 6}
+            Rectangle(2, 4, 8, {'x': 6})
+
+    def test_setter_invalid_y_set(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = {3, 6, 9}
+            Rectangle(2, 4, 8, {3, 6, 9})
+
+    def test_setter_invalid_y_frozenset(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = frozenset({3, 6, 9})
+            Rectangle(2, 4, 8, frozenset({3, 6, 9}))
+
+    def test_setter_invalid_y_byte(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = b'dude'
+            Rectangle(2, 4, 8, b'dude')
+
+    def test_setter_invalid_y_bytearray(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = bytearray(b'dude')
+            Rectangle(2, 4, 8, bytearray(b'dude'))
+
+    def test_setter_invalid_y_memoryview(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.y = memoryview(b'dude')
+            Rectangle(2, 4, 8, memoryview(b'dude'))
+
+
 class TestRectangle_area(unittest.TestCase):
     """ tests for Rectangle area method """
     def setUp(self):
@@ -186,9 +512,9 @@ class TestRectangle_display(unittest.TestCase):
                 "  ##\n  ##\n  ##\n  ##\n"
             )
 
-    def test_display_no_arguments(self):
+    def test_display_with_argument(self):
         with self.assertRaises(TypeError):
-            Rectangle.display()
+            Rectangle(2, 4).display(2)
 
 
 class TestRectangle_update(unittest.TestCase):
@@ -245,6 +571,764 @@ class TestRectangle_update(unittest.TestCase):
             'y': 32
         })
         self.assertEqual(str(self.instance), "[Rectangle] (24) 16/32 - 4/8")
+
+
+class TestRectangle_updates_invalid_attribute_types(unittest.TestCase):
+    """ tests for Rectangle invalid update method attributes """
+    def setUp(self):
+        self.instance = Rectangle(2, 4, 8, 16, 12)
+
+    def test_update_invalid_width_float(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, 3.14)
+
+    def test_update_invalid_width_complex(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, complex(6))
+
+    def test_update_invalid_width_range(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, range(6))
+
+    def test_update_invalid_width_inf(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, float('inf'))
+
+    def test_update_invalid_width_nan(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, float('nan'))
+
+    def test_update_invalid_width_string(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, "dude")
+
+    def test_update_invalid_width_bool(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, True)
+
+    def test_update_invalid_width_none(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, None)
+
+    def test_update_invalid_width_tuple(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, (2, 4))
+
+    def test_update_invalid_width_list(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, [6, 6])
+
+    def test_update_invalid_width_dict(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, {'width': 6})
+
+    def test_update_invalid_width_set(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, {3, 6, 9})
+
+    def test_update_invalid_width_frozenset(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, frozenset({3, 6, 9}))
+
+    def test_update_invalid_width_byte(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, b'dude')
+
+    def test_update_invalid_width_bytearray(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, bytearray(b'dude'))
+
+    def test_update_invalid_width_memoryview(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(self.instance.id, memoryview(b'dude'))
+
+    def test_update_invalid_height_float(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                3.14
+            )
+
+    def test_update_invalid_height_complex(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                complex(6)
+            )
+
+    def test_update_invalid_height_range(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                range(6)
+            )
+
+    def test_update_invalid_height_inf(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                float('inf')
+            )
+
+    def test_update_invalid_height_nan(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                float('nan')
+            )
+
+    def test_update_invalid_height_string(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                "dude"
+            )
+
+    def test_update_invalid_height_bool(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                True
+            )
+
+    def test_update_invalid_height_none(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                None
+            )
+
+    def test_update_invalid_height_tuple(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                (2, 4)
+            )
+
+    def test_update_invalid_height_list(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                [6, 6]
+            )
+
+    def test_update_invalid_height_dict(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                {'width': 6}
+            )
+
+    def test_update_invalid_height_set(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                {3, 6, 9}
+            )
+
+    def test_update_invalid_height_frozenset(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                frozenset({3, 6, 9})
+            )
+
+    def test_update_invalid_height_byte(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                b'dude'
+            )
+
+    def test_update_invalid_height_bytearray(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                bytearray(b'dude')
+            )
+
+    def test_update_invalid_height_memoryview(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                memoryview(b'dude')
+            )
+
+    def test_update_invalid_x_float(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                3.14
+            )
+
+    def test_update_invalid_x_complex(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                complex(6)
+            )
+
+    def test_update_invalid_x_range(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                range(6)
+            )
+
+    def test_update_invalid_x_inf(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                float('inf')
+            )
+
+    def test_update_invalid_x_nan(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                float('nan')
+            )
+
+    def test_update_invalid_x_string(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                "dude"
+            )
+
+    def test_update_invalid_x_bool(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                True
+            )
+
+    def test_update_invalid_x_none(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                None
+            )
+
+    def test_update_invalid_x_tuple(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                (2, 4)
+            )
+
+    def test_update_invalid_x_list(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                [6, 6]
+            )
+
+    def test_update_invalid_x_dict(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                {'width': 6}
+            )
+
+    def test_update_invalid_x_set(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                {3, 6, 9}
+            )
+
+    def test_update_invalid_x_frozenset(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                frozenset({3, 6, 9})
+            )
+
+    def test_update_invalid_x_byte(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                b'dude'
+            )
+
+    def test_update_invalid_x_bytearray(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                bytearray(b'dude')
+            )
+
+    def test_update_invalid_x_memoryview(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                memoryview(b'dude')
+            )
+
+    def test_update_invalid_y_float(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                3.14
+            )
+
+    def test_update_invalid_y_complex(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                complex(6)
+            )
+
+    def test_update_invalid_y_range(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                range(6)
+            )
+
+    def test_update_invalid_y_inf(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                float('inf')
+            )
+
+    def test_update_invalid_y_nan(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                float('nan')
+            )
+
+    def test_update_invalid_y_string(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                "dude"
+            )
+
+    def test_update_invalid_y_bool(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                True
+            )
+
+    def test_update_invalid_y_none(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                None
+            )
+
+    def test_update_invalid_y_tuple(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                (2, 4)
+            )
+
+    def test_update_invalid_y_list(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                [6, 6]
+            )
+
+    def test_update_invalid_y_dict(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                {'width': 6}
+            )
+
+    def test_update_invalid_y_set(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                {3, 6, 9}
+            )
+
+    def test_update_invalid_y_frozenset(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                frozenset({3, 6, 9})
+            )
+
+    def test_update_invalid_y_byte(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                b'dude'
+            )
+
+    def test_update_invalid_y_bytearray(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                bytearray(b'dude')
+            )
+
+    def test_update_invalid_y_memoryview(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(
+                self.instance.id,
+                self.instance.width,
+                self.instance.height,
+                self.instance.x,
+                memoryview(b'dude')
+            )
+
+    def test_update_kwargs_invalid_width_float(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width=3.14)
+
+    def test_update_kwargs_invalid_width_complex(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width=complex(6))
+
+    def test_update_kwargs_invalid_width_range(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width=range(6))
+
+    def test_update_kwargs_invalid_width_inf(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width=float('inf'))
+
+    def test_update_kwargs_invalid_width_nan(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width=float('nan'))
+
+    def test_update_kwargs_invalid_width_string(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width="dude")
+
+    def test_update_kwargs_invalid_width_bool(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width=True)
+
+    def test_update_kwargs_invalid_width_none(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width=None)
+
+    def test_update_kwargs_invalid_width_tuple(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width=(2, 4))
+
+    def test_update_kwargs_invalid_width_list(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width=[6, 6])
+
+    def test_update_kwargs_invalid_width_dict(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width={'width': 6})
+
+    def test_update_kwargs_invalid_width_set(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width={3, 6, 9})
+
+    def test_update_kwargs_invalid_width_frozenset(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width=frozenset({3, 6, 9}))
+
+    def test_update_kwargs_invalid_width_byte(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width=b'dude')
+
+    def test_update_kwargs_invalid_width_bytearray(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width=bytearray(b'dude'))
+
+    def test_update_kwargs_invalid_width_memoryview(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.instance.update(width=memoryview(b'dude'))
+
+    def test_update_kwargs_invalid_height_float(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height=3.14)
+
+    def test_update_kwargs_invalid_height_complex(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height=complex(6))
+
+    def test_update_kwargs_invalid_height_range(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height=range(6))
+
+    def test_update_kwargs_invalid_height_inf(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height=float('inf'))
+
+    def test_update_kwargs_invalid_height_nan(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height=float('nan'))
+
+    def test_update_kwargs_invalid_height_string(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height="dude")
+
+    def test_update_kwargs_invalid_height_bool(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height=True)
+
+    def test_update_kwargs_invalid_height_none(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height=None)
+
+    def test_update_kwargs_invalid_height_tuple(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height=(2, 4))
+
+    def test_update_kwargs_invalid_height_list(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height=[6, 6])
+
+    def test_update_kwargs_invalid_height_dict(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height={'width': 6})
+
+    def test_update_kwargs_invalid_height_set(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height={3, 6, 9})
+
+    def test_update_kwargs_invalid_height_frozenset(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height=frozenset({3, 6, 9}))
+
+    def test_update_kwargs_invalid_height_byte(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height=b'dude')
+
+    def test_update_kwargs_invalid_height_bytearray(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height=bytearray(b'dude'))
+
+    def test_update_kwargs_invalid_height_memoryview(self):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.instance.update(height=memoryview(b'dude'))
+
+    def test_update_kwargs_invalid_x_float(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x=3.14)
+
+    def test_update_kwargs_invalid_x_complex(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x=complex(6))
+
+    def test_update_kwargs_invalid_x_range(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x=range(6))
+
+    def test_update_kwargs_invalid_x_inf(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x=float('inf'))
+
+    def test_update_kwargs_invalid_x_nan(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x=float('nan'))
+
+    def test_update_kwargs_invalid_x_string(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x="dude")
+
+    def test_update_kwargs_invalid_x_bool(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x=True)
+
+    def test_update_kwargs_invalid_x_none(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x=None)
+
+    def test_update_kwargs_invalid_x_tuple(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x=(2, 4))
+
+    def test_update_kwargs_invalid_x_list(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x=[6, 6])
+
+    def test_update_kwargs_invalid_x_dict(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x={'width': 6})
+
+    def test_update_kwargs_invalid_x_set(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x={3, 6, 9})
+
+    def test_update_kwargs_invalid_x_frozenset(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x=frozenset({3, 6, 9}))
+
+    def test_update_kwargs_invalid_x_byte(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x=b'dude')
+
+    def test_update_kwargs_invalid_x_bytearray(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x=bytearray(b'dude'))
+
+    def test_update_kwargs_invalid_x_memoryview(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.instance.update(x=memoryview(b'dude'))
+
+    def test_update_kwargs_invalid_y_float(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y=3.14)
+
+    def test_update_kwargs_invalid_y_complex(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y=complex(6))
+
+    def test_update_kwargs_invalid_y_range(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y=range(6))
+
+    def test_update_kwargs_invalid_y_inf(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y=float('inf'))
+
+    def test_update_kwargs_invalid_y_nan(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y=float('nan'))
+
+    def test_update_kwargs_invalid_y_string(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y="dude")
+
+    def test_update_kwargs_invalid_y_bool(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y=True)
+
+    def test_update_kwargs_invalid_y_none(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y=None)
+
+    def test_update_kwargs_invalid_y_tuple(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y=(2, 4))
+
+    def test_update_kwargs_invalid_y_list(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y=[6, 6])
+
+    def test_update_kwargs_invalid_y_dict(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y={'width': 6})
+
+    def test_update_kwargs_invalid_y_set(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y={3, 6, 9})
+
+    def test_update_kwargs_invalid_y_frozenset(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y=frozenset({3, 6, 9}))
+
+    def test_update_kwargs_invalid_y_byte(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y=b'dude')
+
+    def test_update_kwargs_invalid_y_bytearray(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y=bytearray(b'dude'))
+
+    def test_update_kwargs_invalid_y_memoryview(self):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.instance.update(y=memoryview(b'dude'))
 
 
 class TestRectangle_to_dictionary(unittest.TestCase):
