@@ -250,7 +250,7 @@ class TestBase_load_from_file(unittest.TestCase):
             str(Rectangle.load_from_file()[1])
         )
         self.assertTrue(
-            all(type(obj) == Rectangle for obj in Rectangle.load_from_file())
+            all(type(obj) is Rectangle for obj in Rectangle.load_from_file())
         )
 
     def test_load_from_file_squares(self):
@@ -264,7 +264,7 @@ class TestBase_load_from_file(unittest.TestCase):
             str(Square.load_from_file()[1])
         )
         self.assertTrue(
-            all(type(obj) == Square for obj in Square.load_from_file())
+            all(type(obj) is Square for obj in Square.load_from_file())
         )
 
 
