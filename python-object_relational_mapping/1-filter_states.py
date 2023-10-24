@@ -15,7 +15,7 @@ if __name__ == "__main__":
         db=argv[3]
     )
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE 'N%'")
+    cur.execute("SELECT * FROM states WHERE BINARY name LIKE 'N%'")
     output = cur.fetchall()
     [print(item) for item in output]
     cur.close()
