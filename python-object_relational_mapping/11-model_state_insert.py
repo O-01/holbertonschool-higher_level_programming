@@ -11,7 +11,7 @@ Print the new states.id after creation
 Your code should not be executed when imported
 """
 from sys import argv
-from sqlalchemy import create_engine, insert
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 
