@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-lists all states from the database hbtn_0e_0_usa with name matching input
-Injection-safe: YES
+lists all cities from the database hbtn_0e_4_usa
 """
 import MySQLdb
 from sys import argv
@@ -17,9 +16,15 @@ if __name__ == "__main__":
     )
     cur = db.cursor()
     cur.execute(
-        "SELECT * FROM states ORDER BY states.id ASC"
+        "\
+        SELECT cities.id, cities.name, states.name \
+        FROM cities \
+        JOIN states \
+        ON cities.state_id = states.id \
+        ORDER BY cities.id ASC\
+        "
     )
     output = cur.fetchall()
-    [print(item) for item in output if item[1] == argv[4]]
+    [print(item) for item in output]
     cur.close()
     db.close()
