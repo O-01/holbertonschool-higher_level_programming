@@ -14,7 +14,7 @@ Your code should not be executed when imported
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from model_state import State
+from model_state import State, Base
 
 if __name__ == "__main__":
     engine = create_engine(
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states = session.query(State).order_by(State.id)
+    states = session.query(State).order_by(State.id).all()
+    [print("{}: {}".format(state.id, state.name)) for state in states]
 
-    for state in states:
-        print("{}: {}".format(state.id, state.name))
+    session.close()
