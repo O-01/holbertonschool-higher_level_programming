@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" lists all states from the database hbtn_0e_0_usa """
+"""
+lists all states from the database hbtn_0e_0_usa with name beginning with N
+"""
 import MySQLdb
 from sys import argv
 
@@ -13,7 +15,7 @@ if __name__ == "__main__":
         db=argv[3]
     )
     cur = db.cursor()
-    cur.execute("SELECT * FROM states")
+    cur.execute("SELECT * FROM states WHERE LEFT(name, 1) = 'N'")
     output = cur.fetchall()
     [print(item) for item in output]
     cur.close()
