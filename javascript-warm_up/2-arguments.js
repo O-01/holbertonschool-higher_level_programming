@@ -5,5 +5,5 @@ if (argvLen === 3) {
 } else if (argvLen > 3) {
   console.log('Arguments found');
 } else {
-  console.error('No argument');
+  console.log('No argument');
 }
