@@ -1,7 +1,3 @@
 #!/usr/bin/node
-const argvInputs = process.argv.slice(2);
-if (!argvInputs[1]) console.log(0);
-else {
-  const argSort = argvInputs.sort(function (x, y) { return x - y; });
-  console.log(argSort[argSort.length - 2]);
-}
+const inputs = process.argv.slice(2);
+inputs[1] ? console.log(inputs.sort((x, y) => x - y).at(-2)) : console.log(0);
