@@ -5,6 +5,6 @@ request.get(process.argv[2], { timeout: 3000 }, (err, response, body) => {
   else if (response.statusCode === 404) console.log('404 NOT FOUND');
   else {
     const fs = require('fs');
-    fs.writeFile(process.argv[3], body, 'utf8', (err) => { if (err) throw err });
+    fs.writeFile(process.argv[3], body, 'utf8', (err) => { if (err) throw err; });
   }
 });
