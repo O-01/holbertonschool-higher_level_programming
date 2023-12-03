@@ -1,8 +1,5 @@
 $(() => $('input#btn_translate').click(
-  () => $.get(
-    `https://hellosalut.stefanbohacek.dev/?lang=${$('input#language_code').val()}`,
-    (dump) => $('div#hello').text(dump.hello)
-  )
+  () => $.get(`https://hellosalut.stefanbohacek.dev/?lang=${$('input#language_code').val()}`, (dump) => $('div#hello').text(dump.hello))
 ));
 
 // Write a JavaScript script that fetches and prints how to say “Hello” depending on the language
