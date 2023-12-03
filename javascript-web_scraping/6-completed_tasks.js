@@ -11,3 +11,9 @@ request.get(process.argv[2], { timeout: 3000 }, (err, response, body) => {
     console.log(totalCompletedById);
   }
 });
+
+// Write a script that computes the number of tasks completed by user id.
+// - The first argument is the API URL: https://jsonplaceholder.typicode.com/todos
+// - Only print users with completed task
+// - You must use the module request
+// EXAMPLE: ./6-completed_tasks.js https://jsonplaceholder.typicode.com/todos
