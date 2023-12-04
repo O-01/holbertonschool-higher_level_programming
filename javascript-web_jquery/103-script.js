@@ -1,4 +1,4 @@
-$(() => {
+$(document).ready(() => {
   const sayHello = () => $.get(`https://hellosalut.stefanbohacek.dev/?lang=${$('input#language_code').val()}`, (dump) => $('div#hello').text(dump.hello));
   $('input#language_code').on('keypress', (event) => { if (event.which === 13) sayHello(); });
   $('input#btn_translate').click(() => sayHello());

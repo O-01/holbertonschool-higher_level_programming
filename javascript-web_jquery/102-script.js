@@ -1,4 +1,4 @@
-$(() => $('input#btn_translate').click(() => {
+$(document).ready(() => $('input#btn_translate').click(() => {
   $.get(`https://hellosalut.stefanbohacek.dev/?lang=${$('input#language_code').val()}`, (dump) => $('div#hello').text(dump.hello));
 }));
 
