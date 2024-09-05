@@ -117,6 +117,9 @@ id  name
 8   Thriller
 $
 ```
+
+![sql-joins](https://github.com/user-attachments/assets/96990d7f-eb72-4bcf-9151-dad417ede81b)
+
 #
 ## Tasks
 #### 0. My privileges!
