@@ -8,7 +8,11 @@
 - [What is Database & SQL?](https://www.youtube.com/watch?v=FR4QIeZaPeM)
 - [Install MySQL (MySQL Server)](https://www.youtube.com/watch?v=9h3ctGFTz9w)
 - [A Basic MySQL Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
+<<<<<<< HEAD
 - [Basic SQL statements: DDL and DML](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/ddldml.php) *(no need to read the chapter “Privileges”)*
+=======
+- [Basic SQL statements: DDL and DML](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/ddldml.php) (no need to read the chapter “Privileges”)
+>>>>>>> a4a90294a7dc36f366dd13e8f57161c49e932ef6
 - [Basic queries: SQL and RA](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/queries.php)
 - [SQL technique: functions](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/functions.php)
 - [SQL technique: subqueries](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/subqueries.php)
@@ -95,7 +99,11 @@ performance_schema
 sys                      
 $
 ```
+<<<<<<< HEAD
 #### In the container, credentials are `root/root`
+=======
+**In the container, credentials are `root/root`**
+>>>>>>> a4a90294a7dc36f366dd13e8f57161c49e932ef6
 #
 ## Tasks
 #### 0. List databases
