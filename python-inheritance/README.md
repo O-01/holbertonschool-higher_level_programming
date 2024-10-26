@@ -75,7 +75,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-inheritance`
 - File: `0-lookup.py`
 #
@@ -107,7 +107,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-inheritance`
 - File: `1-my_list.py`, `tests/1-my_list.txt`
 #
@@ -135,7 +135,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-inheritance`
 - File: `2-is_same_class.py`
 #
@@ -164,7 +164,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-inheritance`
 - File: `3-is_kind_of_class.py`
 #
@@ -193,7 +193,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-inheritance`
 - File: `4-inherits_from.py`
 #
@@ -220,7 +220,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-inheritance`
 - File: `5-base_geometry.py`
 #
@@ -247,7 +247,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-inheritance`
 - File: `6-base_geometry.py`
 #
@@ -292,7 +292,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-inheritance`
 - File: `7-base_geometry.py`, `tests/7-base_geometry.txt`
 #
@@ -331,7 +331,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-inheritance`
 - File: `8-rectangle.py`
 #
@@ -360,7 +360,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-inheritance`
 - File: `9-rectangle.py`
 #
@@ -388,7 +388,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-inheritance`
 - File: `10-square.py`
 #
@@ -417,7 +417,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-inheritance`
 - File: `11-square.py`
 #
@@ -445,7 +445,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-inheritance`
 - File: `100-my_int.py`
 #
@@ -481,7 +481,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-inheritance`
 - File: `101-add_attribute.py`
 #

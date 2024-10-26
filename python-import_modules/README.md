@@ -64,7 +64,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-import_modules`
 - File: `0-add.py`
 #
@@ -143,7 +143,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-import_modules`
 - File: `1-calculation.py`
 #
@@ -176,7 +176,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-import_modules`
 - File: `2-args.py`
 #
@@ -202,7 +202,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-import_modules`
 - File: `3-infinite_add.py`
 #
@@ -239,7 +239,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-import_modules`
 - File: `5-variable_load.py`
 #
@@ -329,7 +329,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-import_modules`
 - File: `100-my_calculator.py`
 #
@@ -344,7 +344,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-import_modules`
 - File: `101-easy_print.py`
 #
@@ -402,7 +402,7 @@ Write the Python function `def magic_calculation(a, b):` that does exactly the s
 - Tip: [Python bytecode](https://docs.python.org/3.4/library/dis.html)
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-import_modules`
 - File: `102-magic_calculation.py`
 #
@@ -424,7 +424,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-import_modules`
 - File: `103-fast_alphabet.py`
 #

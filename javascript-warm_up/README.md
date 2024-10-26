@@ -79,7 +79,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `0-javascript_is_amazing.js`
 #
@@ -99,7 +99,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `1-multi_languages.js`
 #
@@ -123,7 +123,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `2-arguments.js`
 #
@@ -142,7 +142,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `3-value_argument.js`
 #
@@ -161,7 +161,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `4-concat.js`
 #
@@ -186,7 +186,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `5-to_integer.js`
 #
@@ -209,7 +209,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `6-multi_languages_loop.js`
 #
@@ -238,7 +238,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `7-multi_c.js`
 #
@@ -270,7 +270,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `8-square.js`
 #
@@ -294,7 +294,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `9-add.js`
 #
@@ -319,7 +319,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `10-factorial.js`
 #
@@ -341,7 +341,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `11-second_biggest.js`
 #
@@ -368,7 +368,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `12-object.js`
 #
@@ -390,7 +390,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `13-add.js`
 #
@@ -414,7 +414,7 @@ Hint: Scope
 **This exercise doesn’t pass `semistandard`** so don’t worry about it.
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `100-let_me_const.js`
 #
@@ -438,7 +438,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `101-call_me_moby.js`
 #
@@ -460,7 +460,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `102-add_me_maybe.js`
 #
@@ -494,7 +494,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-warm_up`
 - File: `103-object_fct.js`
 #

@@ -73,7 +73,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-if_else_loops_functions`
 - File: `0-positive_or_negative.py`
 #
@@ -117,7 +117,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-if_else_loops_functions`
 - File: `1-last_digit.py`
 #
@@ -133,7 +133,7 @@ abcdefghijklmnopqrstuvwxyzguillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-if_else_loops_functions`
 - File: `2-print_alphabet.py`
 #
@@ -150,7 +150,7 @@ abcdfghijklmnoprstuvwxyzguillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-if_else_loops_functions`
 - File: `3-print_alphabt.py`
 #
@@ -189,7 +189,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-if_else_loops_functions`
 - File: `4-print_hexa.py`
 #
@@ -209,7 +209,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-if_else_loops_functions`
 - File: `5-print_comb2.py`
 #
@@ -232,7 +232,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-if_else_loops_functions`
 - File: `6-print_comb3.py`
 #
@@ -267,7 +267,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-if_else_loops_functions`
 - File: `7-islower.py`
 #
@@ -296,7 +296,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-if_else_loops_functions`
 - File: `8-uppercase.py`
 #
@@ -323,7 +323,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-if_else_loops_functions`
 - File: `9-print_last_digit.py`
 #
@@ -351,7 +351,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-if_else_loops_functions`
 - File: `10-add.py`
 #
@@ -383,7 +383,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-if_else_loops_functions`
 - File: `11-pow.py`
 #
@@ -410,7 +410,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-if_else_loops_functions`
 - File: `12-fizzbuzz.py`
 #
@@ -427,7 +427,7 @@ zYxWvUtSrQpOnMlKjIhGfEdCbAguillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-if_else_loops_functions`
 - File: `100-print_tebahpla.py`
 #
@@ -458,7 +458,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-if_else_loops_functions`
 - File: `101-remove_char_at.py`
 #

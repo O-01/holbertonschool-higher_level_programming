@@ -75,7 +75,7 @@ What function would you use to print the type of an object?
 Write the name of the function in the file, without `()`.
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `0-answer.txt`
 #
@@ -85,7 +85,7 @@ How do you get the variable identifier (which is the memory address in the CPyth
 Write the name of the function in the file, without `()`.
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `1-answer.txt`
 #
@@ -97,7 +97,7 @@ In the following code, do `a` and `b` point to the same object? Answer with `Yes
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `2-answer.txt`
 #
@@ -109,7 +109,7 @@ In the following code, do `a` and `b` point to the same object? Answer with `Yes
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `3-answer.txt`
 #
@@ -121,7 +121,7 @@ In the following code, do `a` and `b` point to the same object? Answer with `Yes
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `4-answer.txt`
 #
@@ -133,7 +133,7 @@ In the following code, do `a` and `b` point to the same object? Answer with `Yes
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `5-answer.txt`
 #
@@ -146,7 +146,7 @@ What do these 3 lines print?
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `6-answer.txt`
 #
@@ -159,7 +159,7 @@ What do these 3 lines print?
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `7-answer.txt`
 #
@@ -172,7 +172,7 @@ What do these 3 lines print?
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `8-answer.txt`
 #
@@ -185,7 +185,7 @@ What do these 3 lines print?
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `9-answer.txt`
 #
@@ -198,7 +198,7 @@ What do these 3 lines print?
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `10-answer.txt`
 #
@@ -211,7 +211,7 @@ What do these 3 lines print?
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `11-answer.txt`
 #
@@ -224,7 +224,7 @@ What do these 3 lines print?
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `12-answer.txt`
 #
@@ -237,7 +237,7 @@ What do these 3 lines print?
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `13-answer.txt`
 #
@@ -251,7 +251,7 @@ print(l2)
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `14-answer.txt`
 #
@@ -265,7 +265,7 @@ print(l2)
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `15-answer.txt`
 #
@@ -281,7 +281,7 @@ print(a)
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `16-answer.txt`
 #
@@ -297,7 +297,7 @@ print(l)
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `17-answer.txt`
 #
@@ -314,7 +314,7 @@ print(l1)
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `18-answer.txt`
 #
@@ -352,7 +352,7 @@ guillaume@ubuntu:~/$
 No test cases needed
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `19-copy_list.py`
 #
@@ -363,7 +363,7 @@ a = ()
 Is `a` a tuple? Answer with `Yes` or `No`.
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `20-answer.txt`
 #
@@ -374,7 +374,7 @@ a = (1, 2)
 Is `a` a tuple? Answer with `Yes` or `No`.
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `21-answer.txt`
 #
@@ -385,7 +385,7 @@ a = (1)
 Is `a` a tuple? Answer with `Yes` or `No`.
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `22-answer.txt`
 #
@@ -396,7 +396,7 @@ a = (1, )
 Is `a` a tuple? Answer with `Yes` or `No`.
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `23-answer.txt`
 #
@@ -409,7 +409,7 @@ a is b
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `24-answer.txt`
 #
@@ -422,7 +422,7 @@ a is b
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `25-answer.txt`
 #
@@ -435,7 +435,7 @@ a is b
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `26-answer.txt`
 #
@@ -451,7 +451,7 @@ a is b
 Will the last line of this script print `139926795932424`? Answer with `Yes` or `No`.
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `27-answer.txt`
 #
@@ -467,7 +467,7 @@ Will the last line of this script print `139926795932424`? Answer with `Yes` or 
 Will the last line of this script print `139926795932424`? Answer with `Yes` or `No`.
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `28-answer.txt`
 #
@@ -520,7 +520,7 @@ guillaume@ubuntu:~/$
 No test cases needed
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `100-magic_string.py`
 #
@@ -546,7 +546,7 @@ guillaume@ubuntu:~/$
 No test cases needed
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `101-locked_class.py`
 #
@@ -562,7 +562,7 @@ Assuming we are using a CPython implementation of Python3 with default options/c
 - How many int objects are created by the execution of the second line of the script (`103-line2.txt`)
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `103-line1.txt`, `103-line2.txt`
 #
@@ -584,7 +584,7 @@ Assuming we are using a CPython implementation of Python3 with default options/c
 - How many int objects are created by the execution of the last line of the script (`104-line5.txt`)
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `104-line1.txt`, `104-line2.txt`, `104-line3.txt`, `104-line4.txt`, `104-line5.txt`
 #
@@ -603,7 +603,7 @@ Assuming we are using a CPython implementation of Python3 with default options/c
 Hint: `NSMALLPOSINTS`, `NSMALLNEGINTS`
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `105-line1.txt`
 #
@@ -625,7 +625,7 @@ Assuming we are using a CPython implementation of Python3 with default options/c
 - How many string objects are created by the execution of the last line of the script (`106-line5.txt`)
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-everything_is_object`
 - File: `106-line1.txt`, `106-line2.txt`, `106-line3.txt`, `106-line4.txt`, `106-line5.txt`
 #

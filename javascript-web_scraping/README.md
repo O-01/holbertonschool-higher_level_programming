@@ -64,7 +64,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-web_scraping`
 - File: `0-readme.js`
 #
@@ -82,7 +82,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-web_scraping`
 - File: `1-writeme.js`
 #
@@ -100,7 +100,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-web_scraping`
 - File: `2-statuscode.js`
 #
@@ -118,7 +118,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-web_scraping`
 - File: `3-starwars_title.js`
 #
@@ -134,7 +134,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-web_scraping`
 - File: `4-starwars_count.js`
 #
@@ -158,7 +158,7 @@ guillaume@ubuntu:~/$ cat loripsum
 guillaume@ubuntu:~/$ 
 ```
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-web_scraping`
 - File: `5-request_store.js`
 #
@@ -183,7 +183,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-web_scraping`
 - File: `6-completed_tasks.js`
 ## ADVANCED TASKS
@@ -219,7 +219,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-web_scraping`
 - File: `100-starwars_characters.js`
 #
@@ -255,7 +255,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript-web_scraping`
 - File: `101-starwars_characters.js`
 #

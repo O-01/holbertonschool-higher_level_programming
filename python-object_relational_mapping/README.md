@@ -168,7 +168,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `0-select_states.py`
 #
@@ -202,7 +202,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `1-filter_states.py`
 #
@@ -236,7 +236,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `2-my_filter_states.py`
 #
@@ -280,7 +280,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `3-my_safe_filter_states.py`
 #
@@ -341,7 +341,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `4-cities_by_state.py`
 #
@@ -392,7 +392,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `5-filter_cities.py`
 #
@@ -439,7 +439,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `model_state.py`
 #
@@ -470,7 +470,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `7-model_state_fetch_all.py`
 #
@@ -493,7 +493,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `8-model_state_fetch_first.py`
 #
@@ -517,7 +517,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `9-model_state_filter_a.py`
 #
@@ -541,7 +541,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `10-model_state_my_get.py`
 #
@@ -568,7 +568,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `11-model_state_insert.py`
 #
@@ -594,7 +594,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `12-model_state_update_id_2.py`
 #
@@ -615,7 +615,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `13-model_state_delete_a.py`
 #
@@ -686,7 +686,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `model_city.py`, `14-model_city_fetch_by_state.py`
 #
@@ -729,7 +729,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `relationship_city.py`, `relationship_state.py`, `100-relationship_states_cities.py`
 #
@@ -799,7 +799,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `101-relationship_states_cities_list.py`
 #
@@ -838,7 +838,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-object_relational_mapping`
 - File: `102-relationship_cities_states_list.py`
 #

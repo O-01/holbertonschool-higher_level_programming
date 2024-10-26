@@ -68,7 +68,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-more_classes`
 - File: `0-rectangle.py`
 #
@@ -106,7 +106,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-more_classes`
 - File: `1-rectangle.py`
 #
@@ -150,7 +150,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-more_classes`
 - File: `2-rectangle.py`
 #
@@ -210,7 +210,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-more_classes`
 - File: `3-rectangle.py`
 #
@@ -299,7 +299,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-more_classes`
 - File: `4-rectangle.py`
 #
@@ -348,7 +348,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-more_classes`
 - File: `5-rectangle.py`
 #
@@ -401,7 +401,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-more_classes`
 - File: `6-rectangle.py`
 #
@@ -494,7 +494,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-more_classes`
 - File: `7-rectangle.py`
 #
@@ -562,7 +562,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-more_classes`
 - File: `8-rectangle.py`
 #
@@ -622,7 +622,7 @@ guillaume@ubuntu:~/$
 **No test cases needed**
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-more_classes`
 - File: `9-rectangle.py`
 #
@@ -671,7 +671,7 @@ julien@ubuntu:~/N Queens$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-more_classes`
 - File: `101-nqueens.py`
 #

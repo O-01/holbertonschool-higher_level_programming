@@ -61,7 +61,7 @@ guillaume@ubuntu:~/py/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-hello_world`
 - File: `2-print.py`
 #
@@ -81,7 +81,7 @@ guillaume@ubuntu:~/py/0x00$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-hello_world`
 - File: `3-print_number.py`
 #
@@ -100,7 +100,7 @@ guillaume@ubuntu:~/py/0x00$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-hello_world`
 - File: `4-print_float.py`
 #
@@ -122,7 +122,7 @@ guillaume@ubuntu:~/py/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-hello_world`
 - File: `5-print_string.py`
 #
@@ -141,7 +141,7 @@ guillaume@ubuntu:~/py/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-hello_world`
 - File: `6-concat.py`
 #
@@ -164,7 +164,7 @@ guillaume@ubuntu:~/py/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-hello_world`
 - File: `7-edges.py`
 #
@@ -184,7 +184,7 @@ guillaume@ubuntu:~/py/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-hello_world`
 - File: `8-concat_edges.py`
 #
@@ -218,7 +218,7 @@ guillaume@ubuntu:~/py/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-hello_world`
 - File: `9-easter_egg.py`
 #

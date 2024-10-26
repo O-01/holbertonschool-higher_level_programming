@@ -61,7 +61,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-exceptions`
 - File: `0-safe_print_list.py`
 #
@@ -104,7 +104,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-exceptions`
 - File: `1-safe_print_integer.py`
 #
@@ -153,7 +153,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-exceptions`
 - File: `2-safe_print_list_integers.py`
 #
@@ -190,7 +190,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-exceptions`
 - File: `3-safe_print_division.py`
 #
@@ -237,7 +237,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-exceptions`
 - File: `4-list_division.py`
 #
@@ -261,7 +261,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-exceptions`
 - File: `5-raise_exception.py`
 #
@@ -285,7 +285,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-exceptions`
 - File: `6-raise_exception_msg.py`
 #
@@ -334,7 +334,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-exceptions`
 - File: `100-safe_print_integer_err.py`
 #
@@ -393,7 +393,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-exceptions`
 - File: `101-safe_function.py`
 #
@@ -458,7 +458,7 @@ Write the Python function `def magic_calculation(a, b):` that does exactly the s
 - Tip: [Python bytecode](https://docs.python.org/3.4/library/dis.html)
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-exceptions`
 - File: `102-magic_calculation.py`
 #

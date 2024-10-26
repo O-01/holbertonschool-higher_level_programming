@@ -65,7 +65,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript_objects_scopes_closures`
 - File: `0-rectangle.js`
 #
@@ -109,7 +109,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript_objects_scopes_closures`
 - File: `1-rectangle.js`
 #
@@ -162,7 +162,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript_objects_scopes_closures`
 - File: `2-rectangle.js`
 #
@@ -198,7 +198,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript_objects_scopes_closures`
 - File: `3-rectangle.js`
 #
@@ -250,7 +250,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript_objects_scopes_closures`
 - File: `4-rectangle.js`
 #
@@ -286,7 +286,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript_objects_scopes_closures`
 - File: `5-square.js`
 #
@@ -318,7 +318,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript_objects_scopes_closures`
 - File: `6-square.js`
 #
@@ -342,7 +342,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript_objects_scopes_closures`
 - File: `7-occurrences.js`
 #
@@ -365,7 +365,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript_objects_scopes_closures`
 - File: `8-esrever.js`
 #
@@ -390,7 +390,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript_objects_scopes_closures`
 - File: `9-logme.js`
 #
@@ -428,7 +428,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript_objects_scopes_closures`
 - File: `10-converter.js`
 #
@@ -450,7 +450,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript_objects_scopes_closures`
 - File: `100-map.js`
 #
@@ -478,7 +478,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript_objects_scopes_closures`
 - File: `101-sorted.js`
 #
@@ -500,7 +500,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `javascript_objects_scopes_closures`
 - File: `02-concat.js`
 #

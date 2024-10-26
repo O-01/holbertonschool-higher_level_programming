@@ -56,7 +56,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-data_structures`
 - File: `0-print_list_integer.py`
 #
@@ -82,7 +82,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-data_structures`
 - File: `1-element_at.py`
 #
@@ -113,7 +113,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-data_structures`
 - File: `2-replace_in_list.py`
 #
@@ -143,7 +143,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-data_structures`
 - File: `3-print_reversed_list_integer.py`
 #
@@ -174,7 +174,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-data_structures`
 - File: `4-new_in_list.py`
 #
@@ -201,7 +201,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-data_structures`
 - File: `5-no_c.py`
 #
@@ -238,7 +238,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-data_structures`
 - File: `6-print_matrix_integer.py`
 #
@@ -273,7 +273,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-data_structures`
 - File: `7-add_tuple.py`
 #
@@ -297,7 +297,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-data_structures`
 - File: `8-multiple_returns.py`
 #
@@ -323,7 +323,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-data_structures`
 - File: `9-max_integer.py`
 #
@@ -358,7 +358,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-data_structures`
 - File: `10-divisible_by_2.py`
 #
@@ -386,7 +386,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-data_structures`
 - File: `11-delete_at.py`
 #
@@ -403,7 +403,7 @@ guillaume@ubuntu:~/py/$ wc -l 12-switch.py
 guillaume@ubuntu:~/py/$ 
 ```
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `python-data_structures`
 - File: `12-switch.py`
 #

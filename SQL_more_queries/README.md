@@ -143,7 +143,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `0-privileges.sql`
 #
@@ -165,7 +165,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `1-create_user.sql`
 #
@@ -190,7 +190,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `2-create_read_user.sql`
 #
@@ -221,7 +221,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `3-force_name.sql`
 #
@@ -252,7 +252,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `4-never_empty.sql`
 #
@@ -283,7 +283,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `5-unique_id.sql`
 #
@@ -309,7 +309,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `6-states.sql`
 #
@@ -341,7 +341,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `7-cities.sql`
 #
@@ -377,7 +377,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `8-cities_of_california_subquery.sql`
 #
@@ -417,7 +417,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `9-cities_by_state_join.sql`
 #
@@ -456,7 +456,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `10-genre_id_by_show.sql`
 #
@@ -498,7 +498,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `11-genre_id_all_shows.sql`
 #
@@ -520,7 +520,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `12-no_genre.sql`
 #
@@ -551,7 +551,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `13-count_shows_by_genre.sql`
 #
@@ -577,7 +577,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `14-my_genres.sql`
 #
@@ -602,7 +602,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `15-comedy_only.sql`
 #
@@ -644,7 +644,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `16-shows_by_genre.sql`
 #
@@ -669,7 +669,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `100-not_my_genres.sql`
 #
@@ -696,7 +696,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `101-not_a_comedy.sql`
 #
@@ -726,7 +726,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `102-rating_shows.sql`
 #
@@ -754,7 +754,7 @@ guillaume@ubuntu:~/$
 ```
 #
 #### Repo:
-- GitHub repository: `holbertonschool-higher_level_programming`
+- GitHub repository: `atlas-higher_level_programming`
 - Directory: `SQL_more_queries`
 - File: `103-rating_genres.sql`
 #
